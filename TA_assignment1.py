@@ -1,6 +1,6 @@
-totaltime = int(input("Input time spent on the road:"))
-acc = int(input("Input the acceleration:"))
-dist = int(input("Input the distance:"))
+totaltime = int(input("Input time spent on the road: "))
+acc = int(input("Input the acceleration: "))
+dist = int(input("Input the distance: "))
 
 for i in range (0, totaltime + 1):
     print"Duration:",i,"Distance","*" * int((0.5 * acc * i * i) / 10)
