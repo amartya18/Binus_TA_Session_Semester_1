@@ -66,10 +66,13 @@ while True:
 		chance = random.randint(0,5)
 		if chance == 0:
 			print('''You encountered a pokemon :D''')
-			catch = input("Do u want to use ur pokeball? ")
+			catch = input("You are catching the pokemon! ")
 			chance2  = random.randint(0,3)
 			if chance2 == 0:
-				print("you catched a pokemon! :D")			
+				print("you catched a pokemon! :D")	
+			else:
+				print("better luck next time!")		
+
 	option = input("Input your choice... ")
 	if option == "w":
 		if playery - 1 >= 0:
@@ -81,7 +84,7 @@ while True:
 		if playery + 1 <= row:
 			playery += 1
 	elif option == "d":
-		if playerx + 1 <= row:
+		if playerx + 1 <= col:
 			playerx += 1
 	elif option == "1":
 		save()
@@ -101,10 +104,3 @@ while True:
 		print("")
 
 	
-
-
-
-
-	
-
-
